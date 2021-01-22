@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registeration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="text/javascript"></script>
+</head>
+<body>
+    <table id="dataIn">
+        <tr>
+            <td colspan="3" class="tbTitel">Patient Registeration</td>
+        </tr>
+        <tr>
+            <td><label id="FirstName" for="firstName"></label>First Name</td>
+            <td><input id="ipFirstName" type="text" /></td>
+            <td><label id="vFirstName" for="Verification"></label></td>
+        </tr>
+        <tr>
+            <td><label id="LastName" for="lastName"></label>Last Name</td>
+            <td><input id="ipLastName" type="text" /></td>
+            <td><label id="vLastName" for="Verification"></label></td>
+        </tr>
+        <tr>
+            <td><label id="Email" for="email"></label>Social Security Number</td>
+            <td><input id="ipSsn" type="email" /></td>
+            <td><label id="" for="Verification"></label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="btSubmit" type="submit" onclick="register()">Submit</button></td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="myTable" border="1">
+        <tr>
+            <td colspan="3"><button onclick="getData()">Get data</button></td>
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Social Security Number</th>
+        </tr>
+    </table>
+</body>
+</html>
